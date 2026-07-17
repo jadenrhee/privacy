@@ -1,0 +1,107 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Credentialing &amp; CAQH Tracker - CredKeeper — Privacy Policy</title>
+<link rel="stylesheet" href="/style.css"></head><body>
+<a class="home" href="/">&larr; All privacy policies</a>
+<h1>CredKeeper Privacy Policy</h1>
+
+<p>_Last updated: 2026-07-06_</p>
+
+<h2>The short version</h2>
+
+<p>**CredKeeper stores everything on your own computer. We never see your provider</p>
+<p>data. Nothing is transmitted to us, ever.**</p>
+
+<p>CredKeeper is a local-only Chrome extension. Provider names, NPIs, license</p>
+<p>numbers, DEA numbers, CAQH IDs, expiration dates, notes, and every other field</p>
+<p>you enter live in your browser&#x27;s local extension storage</p>
+<p>(<code>chrome.storage.local</code>) on your machine. There is no CredKeeper account, no</p>
+<p>CredKeeper server, and no CredKeeper database. We could not read your data if we</p>
+<p>wanted to — it never leaves your device.</p>
+
+<h2>This is provider data, not patient data</h2>
+
+<p>CredKeeper tracks <strong>provider credentials</strong> — the licenses, registrations,</p>
+<p>certifications, and attestations that keep a clinician billable. It contains **no</p>
+<p>Protected Health Information (PHI)<strong> and </strong>no patient records**. It is therefore</p>
+<p>outside the scope of HIPAA&#x27;s patient-data protections. We still treat provider</p>
+<p>identifiers as sensitive (see below).</p>
+
+<h2>What we intentionally do NOT collect</h2>
+
+<ul>
+<li><strong>No Social Security Numbers.</strong> SSN is the single highest-risk identifier and</li>
+</ul>
+<p>  is not needed to track expiration dates. There is no SSN field in CredKeeper</p>
+<p>  v1 — not hidden, not optional, simply absent. Keep SSNs wherever you keep them</p>
+<p>  today.</p>
+<ul>
+<li><strong>No portal credentials.</strong> CredKeeper never asks for, stores, or transmits</li>
+</ul>
+<p>  your CAQH or payer-portal usernames and passwords. Autofill works only inside</p>
+<p>  a session you have already logged into yourself.</p>
+<ul>
+<li><strong>No browsing history or page scraping.</strong> CredKeeper does not read the pages</li>
+</ul>
+<p>  you visit. The autofill feature only writes into a form when you explicitly</p>
+<p>  click &quot;Fill visible form,&quot; and only on the tab you are actively viewing.</p>
+
+<h2>Sensitive identifiers we do store (locally)</h2>
+
+<p>NPI, state license numbers, DEA numbers, and CAQH IDs are stored locally and</p>
+<p><strong>masked by default in the UI</strong> (e.g. <code>••••••4321</code>), revealed only on click and</p>
+<p>automatically re-masked after 30 seconds. You can turn masking off in Settings.</p>
+
+<h2>Autofill: assistive only</h2>
+
+<p>When you click &quot;Fill visible form,&quot; CredKeeper injects a one-time script into the</p>
+<p>tab you are viewing (using Chrome&#x27;s <code>activeTab</code> permission, which requires your</p>
+<p>click) to match form labels and fill in the provider data you already stored.</p>
+
+<ul>
+<li>It <strong>never</strong> auto-submits, navigates, or clicks portal buttons for you.</li>
+<li>Every filled field flashes a teal outline so you can review it before you</li>
+</ul>
+<p>  submit the form yourself.</p>
+<ul>
+<li>Hidden fields are never touched.</li>
+<li>If a form can&#x27;t be matched, CredKeeper degrades to copy buttons — never a dead</li>
+</ul>
+<p>  end.</p>
+
+<h2>The one and only network connection: payments</h2>
+
+<p>Payments are handled by <strong>ExtensionPay</strong> (extensionpay.com), a third-party</p>
+<p>payment processor for browser extensions. When you start a subscription or when</p>
+<p>CredKeeper checks whether your subscription is active, it contacts ExtensionPay.</p>
+<p>**Only subscription/entitlement metadata is exchanged — never your provider</p>
+<p>data.** ExtensionPay&#x27;s privacy policy governs that interaction. If you never</p>
+<p>upgrade, CredKeeper works fully offline and contacts nothing.</p>
+
+<h2>Permissions and why each is needed</h2>
+
+<p>| Permission      | Why                                                                 |</p>
+<p>| --------------- | ------------------------------------------------------------------- |</p>
+<p>| <code>storage</code>       | Save your vault locally on your device.                             |</p>
+<p>| <code>alarms</code>        | Run the daily deadline sweep for reminders.                         |</p>
+<p>| <code>notifications</code> | Show desktop reminders before deadlines.                            |</p>
+<p>| <code>sidePanel</code>     | Show the Fill Card next to a portal form.                           |</p>
+<p>| <code>activeTab</code>     | Fill the form on the tab you&#x27;re viewing — only after you click.     |</p>
+<p>| <code>scripting</code>     | Inject the one-time fill script into that active tab on your click. |</p>
+
+<p><strong>CredKeeper requests no host permissions.</strong> It cannot run on any site until you</p>
+<p>explicitly invoke it.</p>
+
+<h2>Your data is yours</h2>
+
+<p>Export a full JSON backup at any time (always allowed, even on the free plan).</p>
+<p>Encrypted backups (Pro) are locked with a passphrase you choose using</p>
+<p>AES-256-GCM before they ever leave your machine. Uninstalling removes all local</p>
+<p>data.</p>
+
+<h2>Contact</h2>
+
+<p>Questions: privacy@credkeeper.app</p>
+
+<footer>Credentialing &amp; CAQH Tracker - CredKeeper · breezylifeapps · Contact: breezyapps.support@gmail.com</footer>
+</body></html>

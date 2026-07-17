@@ -1,0 +1,87 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fake Review Checker for Amazon - TrustLens — Privacy Policy</title>
+<link rel="stylesheet" href="/style.css"></head><body>
+<a class="home" href="/">&larr; All privacy policies</a>
+<h1>TrustLens Privacy Policy</h1>
+
+<p>_Last updated: July 7, 2026. Applies to TrustLens 1.0.0._</p>
+
+<p>Plain English, one screen. This policy matches what the code actually does; it</p>
+<p>was verified line-by-line against the extension during a QA audit.</p>
+
+<h2>What TrustLens collects about you</h2>
+
+<p><strong>Nothing.</strong> No account, no analytics, no telemetry, no browsing history, no</p>
+<p>product views, no crash reporting. There is no server that receives data about</p>
+<p>you, so there is nothing for us to see, sell, or lose.</p>
+
+<h2>What happens on your device</h2>
+
+<p>When you open an Amazon product page, TrustLens analyzes the content already on</p>
+<p>that page (reviews, ratings, dates, prices) inside your browser, and stores a few</p>
+<p>things locally so the extension works:</p>
+
+<ul>
+<li><strong>Your settings</strong> (display mode, per-site pauses).</li>
+<li><strong>Price memory</strong>: prices of products you have viewed, so it can show &quot;you saw</li>
+</ul>
+<p>  this cheaper last month.&quot; Stored only on your device, capped in size, never</p>
+<p>  uploaded.</p>
+<ul>
+<li><strong>A cached copy of the scoring configuration</strong> (see below).</li>
+<li><strong>A short local error log</strong> to help you file a bug report if something breaks.</li>
+</ul>
+<p>  On your device only, never transmitted.</p>
+
+<p>Uninstalling the extension deletes all of it.</p>
+
+<h2>The only network request the extension makes</h2>
+
+<p>TrustLens periodically downloads its own <strong>scoring-configuration file</strong> — a small</p>
+<p>JSON file of weights and page selectors — so scoring can be tuned and kept</p>
+<p>working when Amazon changes its layout, without waiting for a store update. This</p>
+<p>request contains no information about you beyond what any file download reveals</p>
+<p>(your IP address, to the file&#x27;s host). We do not log it. If the download fails,</p>
+<p>the extension falls back to the configuration bundled inside it and keeps working.</p>
+
+<h2>Permissions, and why each is needed</h2>
+
+<ul>
+<li><strong>Access to <code>www.amazon.com</code></strong> — to read the product page you are viewing and</li>
+</ul>
+<p>  show the trust overlay there. TrustLens runs on no other site.</p>
+<ul>
+<li><strong>Storage</strong> — for the local settings, price memory, and cached config above.</li>
+</ul>
+<p>  Nothing is synced or transmitted.</p>
+<ul>
+<li><strong>Alarms</strong> — to schedule the daily configuration refresh.</li>
+</ul>
+
+<h2>If you uninstall</h2>
+
+<p>Chrome opens a static goodbye page from the project site. It carries no</p>
+<p>parameters, no identifier, and no tracking; it exists only so you can send</p>
+<p>feedback if you want to. The uninstall itself deletes everything TrustLens</p>
+<p>stored.</p>
+
+<h2>Payments</h2>
+
+<p>TrustLens 1.0.0 is entirely free and contains no payment processing. If a paid</p>
+<p>&quot;Pro&quot; tier is added in a future version, this policy will be updated first to</p>
+<p>describe exactly what the payment processor receives (at most your payment status</p>
+<p>and the email you give them, used only to manage your subscription), and the</p>
+<p>change will be announced in the extension before it takes effect.</p>
+
+<h2>Changes</h2>
+
+<p>Material changes will be announced in the extension before they apply, and the</p>
+<p>history is public in the project repository.</p>
+
+<h2>Contact</h2>
+
+<p>privacy@ (your domain) — replace with your real contact address before hosting.</p>
+
+<footer>Fake Review Checker for Amazon - TrustLens · breezylifeapps · Contact: breezyapps.support@gmail.com</footer>
+</body></html>
