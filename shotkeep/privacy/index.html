@@ -36,8 +36,26 @@
 <p>If you choose to buy Pro, checkout is handled by</p>
 <p><a href="https://extensionpay.com">ExtensionPay</a> and Stripe on the extensionpay.com</p>
 <p>page. ShotKeep stores only a cached paid/unpaid flag locally. We never see or</p>
-<p>store your card details, name, or email. If you never open the upgrade page,</p>
-<p>ShotKeep makes no network connections at all.</p>
+<p>store your card details, name, or email.</p>
+
+<p>So that a purchase is recognised, ShotKeep asks ExtensionPay for your licence</p>
+<p>status when your browser starts and when you open the editor or settings. That</p>
+<p>request carries a random installation identifier only — never a capture, a page,</p>
+<p>a URL, or anything you have done in the extension. Your screenshots and history</p>
+<p>never leave your computer.</p>
+
+<h2>Licence check</h2>
+
+<p>ShotKeep bundles <a href="https://extensionpay.com">ExtensionPay</a>, which handles the</p>
+<p>optional paid upgrade. So a purchase is recognised on this device, ShotKeep asks</p>
+<p>ExtensionPay for your licence status automatically when your browser starts, and</p>
+<p>again when you open the extension&#x27;s own pages — this happens whether or not you</p>
+<p>have ever paid. That request carries a random per-installation identifier and</p>
+<p>nothing else: no page content, no URLs, no file names, and nothing you have</p>
+<p>created in the extension. If you buy Pro, ExtensionPay and Stripe handle the</p>
+<p>payment on their own page and your email is held in your ExtensionPay account;</p>
+<p>we never see or store your card details. Everything you make with ShotKeep stays</p>
+<p>on your computer.</p>
 
 <h2>Permissions, in plain language</h2>
 
